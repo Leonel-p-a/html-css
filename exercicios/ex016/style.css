@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #9CB6D9, #F0F2DC 70%);
+}
+
+main {
+    background-attachment: fixed; /*define se o backgroud fica fixo ou se movimenta*/
+    background-color: white;
+    border-radius: 10px; /*arredonda as pontas do caixa branca onde estão os parágrafos*/
+    box-shadow: 5px 5px 15px #5959599e; /*define as sombras. primeiro parâmetro define o quanto a sombra anda para o lado, segundo para baixo, terceiro o quanto vai espalhar e o quarto é a cor*/
+    width: 600px; /*define o tamanho do caixa*/
+    padding: 20px; /*define o espaçamento lateral dentro da caixa*/
+    margin: auto; /*mantém sempre centralizado*/
+}
+
+h1 {
+    color: #595959;
+    text-align: center;
+    text-shadow: 1px 1px 3px #595959;
+}
+
+h2 {
+    color: #6089BF;
+}
+
+p {
+    text-align: justify;
+}

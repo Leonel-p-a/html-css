@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 {
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+
+            border-width: 7px;
+            border-style: inset;
+            border-color: rgb(1, 1, 39);
+            border-radius: 4%;
+
+            /* border: 7px inset rgb(1, 1, 39); -> é o shorthand para border width, style e color*/
+
+            padding-right: 7px;
+            padding-left: 7px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+            outline-width: 3.5px;
+            outline-style: dashed;
+        }
+
+        a {
+            background-color: yellow;
+            display: inline-block;
+            width: 150px;
+        }
+
+        h1:hover{
+            background-color: rgb(255, 0, 0);
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">Links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

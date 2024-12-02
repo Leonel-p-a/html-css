@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+        <ol type="I">
+            <li>Acordar</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+        <p>Assim se inicia o dia, o qual prossegue:</p>
+        <ol type="I" start="4">
+            <li>Tomar banho</li>
+            <li>Se arrumar</li>
+        </ol>
+        <h2>Listas não ordenadas</h2>
+        <ul> <!--type="disc" "square" "circle"-->
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Hipercalórico</li>
+        </ul>
+        <h2>Rotina diária</h2>
+
+        <!--O estilo CSS abaixo não está no exercício, apenas usei, com a ajuda do ChatGPT, para fazer a lista com sub-itens enumerados com 1.1 em diante-->
+
+        <style>
+            ol {
+                counter-reset: item;
+            }
+            ol > li {
+                display: block;
+            }
+            ol > li:before {
+                content: counters(item, ".") " - "; counter-increment: item;
+            }
+        </style>
+        <ol>
+            <li>Manhã</li>
+            <ol>
+                <li>Acordar</li>
+                <li>Academia</li>
+                <li>Café da manhã</li>
+            </ol>
+            <li>Tarde</li>
+            <ol>
+                <li>Trabalho</li>
+                <li>Lanche</li>
+            </ol>
+            <li>Noite</li>
+            <ol>
+                <li>Estudar</li>
+                <li>Jantar</li>
+                <li>Dormir</li>
+            </ol>
+        </ol>
+        <h2>Meus jogos favoritos</h2>
+        <ul type="disc">
+        <li>PS3</li>
+        </ul>
+        <ol>
+            <li>Dragon Ball</li>
+            <ul type="square">
+                <li>Dragon Ball Raging Blast</li>
+                <li>Dragon Ball Raging Blast 2</li>
+            </ul>
+            <li>Fifa</li>
+            <ul type="square">
+                <li>Fifa 14</li>
+                <li>Fifa 15</li>
+            </ul>
+        </ol>
+        <ul type="disc">
+            <li>PS5</li>
+        </ul>
+        <ol>
+            <li>Dragon Ball</li>
+            <ul type="square">
+                <li>Dragon Ball Sparking Zero</li>
+            </ul>
+            <li>FC</li>
+            <ul type="square">
+                <li>FC 24</li>
+                <li>FC 25</li>
+            </ul>
+        </ol>
+        <h2>Lista de definições</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para a criação de um site</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+        </dl>
+</body>
+</html>
