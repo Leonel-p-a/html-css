@@ -7,73 +7,102 @@
     src: url(pacote-projeto-d010/fontes/idroid.otf);
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 header {
     background-image: linear-gradient(to top, #358876 40%, #53B26F);
     color: white;
-    padding: 10px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.329);
-    
+    text-align: center;
+    padding-top: 40px;
+    min-height: 120px;
 }
 
 header > h1 {
-    text-align: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: white;
     font-style: normal;
     font-weight: 700;
     font-display: swap;
+    font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 header > p {
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 10px;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
 }
 
-header > nav {
+nav {
+    background-color: #358876;
     text-align: left;
+    padding: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.329);
 }
 
-header > nav > a {
+nav > a {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     text-decoration: none;
     color: white;
-    padding-right: 25px;
+    padding: 10px;
+    font-size: 1.2em;
 }
 
 a:hover {
     background-color: #A0E0AC;
-    border-radius: 3px;
 }
 
-h1, h2 {
-    font-family: idroid;
-    color: #2d574e;
-}
-
-h2 {
-    background-image: linear-gradient(to right, rgb(171, 237, 202), white);
+body {
+    background-color: #A0E0AC;
 }
 
 main {
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     background-color: white;
-    width: 830px;
+    max-width: 830px;
+    min-width: 300px;
     margin: auto;
+    margin-bottom: 20px;
     padding: 20px;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.329);
 }
 
-.imagens {
-    display: flex;
-    justify-content: center;
+main h1, h2 {
+    font-family: idroid;
+    color: #2d574e;
 }
 
-.segundomain {    
-    border-radius: 0 0px 10px 10px;
+main h1 {
+    font-size: 1.5em;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, rgb(171, 237, 202), white);
+    font-size: 1.2em;
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-indent: 30px;
+    line-height: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+.imagempequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
 }
 
 .extra {
@@ -93,36 +122,20 @@ a {
     font-weight: bold;
 }
 
-p {
-    text-indent: 30px;
-}
-
-@media screen and (max-width: 910px) {
-    main {
-        width: 410px;
-    }
-
-    iframe {
-        width: auto;
-        height: auto;
-    }
-
-    div.video {
-        width: 430px;
-    }
-}
-
-body {
-    background-color: #A0E0AC;
-}
-
 .video {
-    background-color: #2d574e;
-    text-align: center;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.329);
-    width: 850px;
-    margin: auto;
-    padding: 10px;
+    background-color: #358876;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 ul {
@@ -149,15 +162,6 @@ ul {
     margin-left: 10px;
 }
 
-footer {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: #358876;
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-}
-
 .especial {
     font-weight: bold;
     color: #2d574e;
@@ -165,4 +169,12 @@ footer {
 
 .destaque {
     color: rgba(255, 255, 255, 0.621);
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #358876;
+    color: white;
+    padding: 10px;
 }
