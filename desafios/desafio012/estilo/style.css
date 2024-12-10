@@ -11,13 +11,15 @@
 
 :root {
     --font01: "Passion One";
-    --font02: "Sriracha"
+    --font02: "Sriracha";
+    --font03: "Verdana";
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
+    width: 100%;
 }
 
 header h1 {
@@ -32,7 +34,7 @@ header h1 {
 header p {
     color: white;
     font-size: 1em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font03);
     padding-bottom: 50px;
 }
 
@@ -45,6 +47,11 @@ header a {
 body {
     background-color: black;
     background-image: url(../imagens/background001.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 1px 1px 10px 5px rgba(0, 0, 0, 0.475);
 }
 
 main {
@@ -54,19 +61,43 @@ main {
 }
 
 section {
-    font-size: 3.5em;
+    font-size: 3.36em;
 }
 
 section.secao1 {
     background-color: white;
     width: 100%;
-    padding-top: 70px;
-    padding-bottom: 120px;
+    padding-top: 73px;
+    padding-bottom: 180px;
     padding-left: 30px;
+    line-height: 2em;
+    box-shadow: 2px 2px 15px 4px rgba(0, 0, 0, 0.451);
 }
 
 section.secao2 {
     background-color: rgba(0, 0, 0, 0.373);
     color: white;
-    max-width: 700px;
+    max-width: 645px;
+    margin-top: 40px;
+    margin-left: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+    line-height: 2em;
+    text-shadow: 1px 1px black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: var(--font03);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
