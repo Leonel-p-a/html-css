@@ -54,7 +54,6 @@ nav ul li a {
 nav ul li a:hover {
     background-color: gray;
     color: black;
-    transition-duration: 0.5s;
 }
 
 main {
