@@ -17,10 +17,11 @@ header {
 header h1 {
     padding: 10px;
     text-align: center;
+    color: rgb(44, 44, 44);
 }
 
 i.material-symbols-outlined {
-    background-color: black;
+    background-color: rgb(44, 44, 44);
     color: white;
     display: block;
     text-align: center;
@@ -46,7 +47,7 @@ nav ul li a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: black;
+    background-color: rgb(44, 44, 44);
     color: white;
     border-top: 1px solid rgba(255, 255, 255, 0.650);    
 }
